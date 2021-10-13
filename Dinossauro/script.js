@@ -11,7 +11,7 @@ function pulo(){
 var checkDead = setInterval(function() {
     let dinoTop = parseInt(window.getComputedStyle(dino).getPropertyValue("top"));
     let cactoLeft = parseInt(window.getComputedStyle(cacto).getPropertyValue("left"));
-    if(cactoLeft<20 && cactoLeft>-20 && dinoTop>=220){
+    if(cactoLeft<20 && cactoLeft>-20 && dinoTop>=230){
         cacto.style.animation = "none";
         alert("Cê perdeu patrão. pontuação: "+Math.floor(counter/100));
         counter=0;
